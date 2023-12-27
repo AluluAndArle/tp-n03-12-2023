@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	text-align: center;
+}
+
+header {
+	display: flex;
+	margin: 0px;
+	font-family: "Cormorant Garamond", serif;
+	font-family: "Roboto Condensed", sans-serif;
+	font-family: "Shadows Into Light", cursive;
+	font-size: 25px;
+	justify-content: space-between;
+}
+
+.bg {
+	background-image: url("../img/fond-plancher-texture-bois-blanc.jpg");
+	width: 100%;
+}
+
+#smalltex {
+	font-size: 12px;
+	padding: 0px 0px 6em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: bold;
+}
+
+#container {
+	width: 1024px;
+	height: 3000px;
+	margin: auto;
+}
+
+.titre {
+	text-align: center;
+	font-size: 20px;
+}
+
+.texte {
+	text-align: center;
+	align-items: center;
+	padding: 0px 30px;
+}
+
+section {
+	display: flex;
+}
+
+.texte2 {
+	flex-direction: row;
+	text-align: center;
+	padding: 20px 15px;
+}
+
+#asper {
+	transform: scaleX(-1);
+}
+
+#pink {
+	color: #e53f6f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: bold;
+}
+
+.cerf {
+	position: relative;
+	height: 60%;
+	top: 74px;
+	left: calc(50% - 512px);
+	z-index: 10;
+	font-size: 12px;
+}
+
+.triangle {
+	position: relative;
+	top: -6.5em;
+	left: 40%;
+	z-index: 2;
+
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 170px 170px 0;
+	border-color: transparent #e53f6f transparent transparent;
+	transform: rotate(0deg);
+}
+
+.resize {
+	width: 680px;
+	height: 495px;
+}
+
+.lowborder {
+	border-bottom: 8px #e53f6f solid;
+}
+
+.ft {
+	background-image: url(../img/motif.jpg);
+}
+
+.social i {
+    font-size: 35px;
+    margin: 0;
+    margin-right: 30px; /* Adjust the space as needed */
+	color: #e53f6f;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	section {
+		width: 100%;
+		height: 550px;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	/* Pour mobile : */
+	section {
+		width: 50%;
+		height: 500px;
+	}
+	h1 {
+		display: block;
+	}
+}
